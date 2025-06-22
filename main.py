@@ -15,13 +15,13 @@ def main():
 				return
 
 		player.update(dt)
-		
+
 		screen.fill("black")
 		player.draw(screen)
 		pygame.display.flip()
 
 		# Set frame rate to 60 - tick returns how longs since last time it was called
-		dt = clock.tick(60) 
+		dt = clock.tick(60) / 1000
 
 if __name__ == "__main__":
 	main()
